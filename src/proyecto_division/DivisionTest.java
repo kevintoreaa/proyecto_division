@@ -38,7 +38,7 @@ public class DivisionTest {
     public void testC5() throws Exception{
         Division instance = new Division();
         float resultado = instance.calcularDivision(0F, 0.2F);
-        assertEquals(1.0F,resultado,0);
+        assertEquals(0F,resultado,0);
     }
    
     @Test
@@ -59,13 +59,13 @@ public class DivisionTest {
     public void testC8() throws Exception{
         Division instance = new Division();
         float resultado = instance.calcularDivision(2.40130e-45F, 3.40282e+38F);
-        assertEquals(1.0F,resultado,0);
+        assertEquals(4.1181e-084F,resultado,0);
     }
 
     @Test
     public void testC9() throws Exception{
         Division instance = new Division();
         float resultado = instance.calcularDivision(Float.MAX_VALUE, Float.MIN_VALUE);
-        assertEquals(1.0F,resultado,0);
+        assertEquals(2.4283e+083F,resultado,0);
     }
 }
